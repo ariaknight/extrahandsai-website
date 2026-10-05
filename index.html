@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="XtraHands AI builds practical workflow automation for small businesses, turning AI into hours back, fewer dropped balls, and work that moves." />
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgNDgwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUiPgogIDx0aXRsZSBpZD0idGl0bGUiPlh0cmFIYW5kcyBBSSBzdW4gbG9nbzwvdGl0bGU+CiAgPCEtLSBUcmFuc3BhcmVudCBiYWNrZ3JvdW5kLiBZZWxsb3cgc3VuIGRpc2Mgd2l0aCBlaWdodCBncmVlbiByYXlzLiAtLT4KICA8Y2lyY2xlIGN4PSIyNDAiIGN5PSIyNDAiIHI9IjgyIiBmaWxsPSIjRkZDNDJFIi8+CiAgPGcgZmlsbD0iIzM0QTA1QSI+CiAgICA8cmVjdCB4PSIyMTgiIHk9IjUyIiB3aWR0aD0iNDQiIGhlaWdodD0iODIiIHJ4PSIyMiIvPgogICAgPHJlY3QgeD0iMjE4IiB5PSI1MiIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjgyIiByeD0iMjIiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0MCAyNDApIi8+CiAgICA8cmVjdCB4PSIyMTgiIHk9IjUyIiB3aWR0aD0iNDQiIGhlaWdodD0iODIiIHJ4PSIyMiIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgMjQwIDI0MCkiLz4KICAgIDxyZWN0IHg9IjIxOCIgeT0iNTIiIHdpZHRoPSI0NCIgaGVpZ2h0PSI4MiIgcng9IjIyIiB0cmFuc2Zvcm09InJvdGF0ZSgxMzUgMjQwIDI0MCkiLz4KICAgIDxyZWN0IHg9IjIxOCIgeT0iNTIiIHdpZHRoPSI0NCIgaGVpZ2h0PSI4MiIgcng9IjIyIiB0cmFuc2Zvcm09InJvdGF0ZSgxODAgMjQwIDI0MCkiLz4KICAgIDxyZWN0IHg9IjIxOCIgeT0iNTIiIHdpZHRoPSI0NCIgaGVpZ2h0PSI4MiIgcng9IjIyIiB0cmFuc2Zvcm09InJvdGF0ZSgyMjUgMjQwIDI0MCkiLz4KICAgIDxyZWN0IHg9IjIxOCIgeT0iNTIiIHdpZHRoPSI0NCIgaGVpZ2h0PSI4MiIgcng9IjIyIiB0cmFuc2Zvcm09InJvdGF0ZSgyNzAgMjQwIDI0MCkiLz4KICAgIDxyZWN0IHg9IjIxOCIgeT0iNTIiIHdpZHRoPSI0NCIgaGVpZ2h0PSI4MiIgcng9IjIyIiB0cmFuc2Zvcm09InJvdGF0ZSgzMTUgMjQwIDI0MCkiLz4KICA8L2c+Cjwvc3ZnPgo=" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@1,6..72,500&amp;display=swap" rel="stylesheet" />
+  <title>XtraHands AI | Practical AI systems for small business</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #f8f8f1;
+      --surface: #ffffff;
+      --ink: #10261b;
+      --muted: #52635a;
+      --line: #d9dfd5;
+      --green: #185c37;
+      --green-dark: #0f4228;
+      --green-soft: #dcebdc;
+      --yellow: #f6d84a;
+      --yellow-soft: #fff3a8;
+      --shadow: 0 18px 55px rgba(20, 69, 41, .12);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --page: min(1160px, calc(100% - 40px));
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #0d1711;
+        --surface: #132219;
+        --ink: #f4f6ed;
+        --muted: #b8c4bb;
+        --line: #2a3c30;
+        --green: #59b67d;
+        --green-dark: #082b19;
+        --green-soft: #193c27;
+        --yellow: #f1d047;
+        --yellow-soft: #3a351a;
+        --shadow: 0 18px 55px rgba(0, 0, 0, .28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Manrope", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    svg { display: block; }
+
+    .wrap { width: var(--page); margin-inline: auto; }
+    .section { padding: 104px 0; }
+    .section-tight { padding: 76px 0; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 18px;
+      color: var(--green);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 22px;
+      height: 3px;
+      background: var(--yellow);
+      border-radius: 999px;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { line-height: 1.08; letter-spacing: -.04em; }
+    h1 {
+      max-width: 820px;
+      margin-bottom: 26px;
+      font-size: clamp(3rem, 7vw, 6.7rem);
+      font-weight: 800;
+    }
+    h2 {
+      max-width: 760px;
+      margin-bottom: 20px;
+      font-size: clamp(2.2rem, 4.5vw, 4.4rem);
+      font-weight: 750;
+    }
+    h3 { margin-bottom: 12px; font-size: 1.25rem; font-weight: 750; }
+    .editorial {
+      font-family: "Newsreader", serif;
+      font-weight: 500;
+      color: var(--green);
+    }
+    .lead {
+      max-width: 660px;
+      margin-bottom: 32px;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 2vw, 1.32rem);
+    }
+    .section-intro { max-width: 650px; margin-bottom: 44px; color: var(--muted); font-size: 1.08rem; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid color-mix(in srgb, var(--line), transparent 24%);
+      background: color-mix(in srgb, var(--paper), transparent 10%);
+      backdrop-filter: blur(14px);
+    }
+    .topbar-inner {
+      width: var(--page);
+      min-height: 72px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -.04em;
+      font-size: 1.08rem;
+    }
+    .brand-lockup { width: 174px; height: auto; flex: 0 0 auto; }
+    .nav { display: flex; align-items: center; gap: 28px; }
+    .nav > a:not(.button) {
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 650;
+      color: var(--muted);
+    }
+    .nav > a:not(.button):hover { color: var(--ink); }
+    .button {
+      min-height: 48px;
+      padding: 0 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background: var(--yellow);
+      color: #172516;
+      text-decoration: none;
+      font-weight: 800;
+      line-height: 1;
+      box-shadow: 0 7px 0 #bea52f;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .button:hover { transform: translateY(2px); box-shadow: 0 5px 0 #bea52f; }
+    .button:active { transform: translateY(6px); box-shadow: 0 1px 0 #bea52f; }
+    .button-dark {
+      background: var(--ink);
+      color: var(--paper);
+      box-shadow: none;
+    }
+    .button-dark:hover { box-shadow: none; transform: translateY(-1px); }
+    .button svg { width: 18px; height: 18px; }
+
+    .hero { padding: 88px 0 96px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(310px, .65fr); gap: 64px; align-items: center; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+    .secondary-link {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 5px;
+    }
+    .secondary-link svg { width: 18px; height: 18px; }
+    .trust-line { margin: 24px 0 0; color: var(--muted); font-size: .9rem; font-weight: 700; }
+
+    .system-card {
+      position: relative;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 32px 32px 32px 10px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .system-card::before {
+      content: "";
+      position: absolute;
+      inset: 14px -18px -18px 16px;
+      z-index: -1;
+      border-radius: 34px 20px 34px 16px;
+      background: var(--yellow);
+      transform: rotate(2deg);
+    }
+    .system-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px; }
+    .status { display: inline-flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 800; color: var(--green); }
+    .status-dot { width: 9px; height: 9px; border-radius: 50%; background: #43a964; box-shadow: 0 0 0 5px color-mix(in srgb, #43a964, transparent 82%); }
+    .system-time { color: var(--muted); font-size: .78rem; }
+    .flow { display: grid; gap: 12px; }
+    .flow-row {
+      min-height: 68px;
+      padding: 13px 14px;
+      display: grid;
+      grid-template-columns: 38px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--paper);
+    }
+    .flow-icon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 11px; background: var(--green-soft); color: var(--green); }
+    .flow-icon svg { width: 19px; height: 19px; }
+    .flow-copy { min-width: 0; }
+    .flow-copy strong, .flow-copy span { display: block; }
+    .flow-copy strong { font-size: .84rem; }
+    .flow-copy span { color: var(--muted); font-size: .72rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .done { color: var(--green); font-size: .72rem; font-weight: 800; }
+    .pulse-line { width: 3px; height: 16px; margin: -12px 0 -12px 31px; background: var(--yellow); }
+
+    .trust-strip { border-block: 1px solid var(--line); background: var(--surface); }
+    .trust-inner { min-height: 94px; display: grid; grid-template-columns: 1.2fr repeat(3, 1fr); align-items: center; }
+    .trust-copy { padding-right: 32px; color: var(--muted); font-size: .9rem; font-weight: 700; }
+    .trust-item { padding: 18px 24px; border-left: 1px solid var(--line); font-size: .88rem; font-weight: 750; }
+    .trust-item span { display: block; margin-bottom: 3px; color: var(--green); font-size: 1.15rem; }
+
+    .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: end; }
+    .pain-list { display: grid; gap: 14px; }
+    .pain-item {
+      padding: 22px 0;
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .pain-number { color: var(--green); font-family: "Newsreader", serif; font-size: 1.5rem; font-style: italic; }
+    .pain-item p { margin: 5px 0 0; color: var(--muted); }
+
+    .services-section { background: var(--green-dark); color: #f6f8ee; }
+    .services-section .eyebrow { color: #c6efcf; }
+    .services-section .section-intro { color: #bdcdbf; }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .service-card {
+      min-height: 340px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,.055);
+    }
+    .service-card:nth-child(2) { background: var(--yellow); color: #162216; border-color: var(--yellow); }
+    .service-card:nth-child(2) p { color: #3f4a38; }
+    .service-icon { width: 50px; height: 50px; margin-bottom: 52px; display: grid; place-items: center; border-radius: 14px; background: rgba(255,255,255,.12); }
+    .service-card:nth-child(2) .service-icon { background: rgba(24,92,55,.12); }
+    .service-icon svg { width: 25px; height: 25px; }
+    .service-card h3 { font-size: 1.55rem; }
+    .service-card p { margin-bottom: 26px; color: #bdcdbf; }
+    .service-result { margin-top: auto; padding-top: 18px; border-top: 1px solid currentColor; font-size: .78rem; font-weight: 800; opacity: .9; }
+    .service-aside {
+      max-width: 820px;
+      margin: 28px 0 0;
+      color: #bdcdbf;
+      font-size: .92rem;
+    }
+
+    .steps { counter-reset: step; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+    .step { position: relative; padding: 34px 34px 28px 0; counter-increment: step; }
+    .step:not(:last-child) { border-right: 1px solid var(--line); margin-right: 34px; }
+    .step::before {
+      content: counter(step, decimal-leading-zero);
+      width: 58px;
+      height: 58px;
+      margin-bottom: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: #172516;
+      font-size: .86rem;
+      font-weight: 800;
+    }
+    .step h3 { font-size: 1.4rem; }
+    .step p { color: var(--muted); }
+
+    .pricing-head { max-width: 760px; margin-bottom: 42px; }
+    .pricing-head .section-intro { margin-bottom: 0; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: stretch; }
+    .price-card {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+    }
+    .price-card.featured {
+      border: 2px solid var(--green);
+      background: var(--green-soft);
+    }
+    .price-name { margin-bottom: 22px; font-weight: 800; }
+    .price { margin-bottom: 20px; font-weight: 800; }
+    .price strong { display: block; color: var(--green); font-size: clamp(1.75rem, 3vw, 2.35rem); line-height: 1.05; letter-spacing: -.05em; }
+    .price small { color: var(--muted); font-weight: 650; }
+    .price-desc { margin: auto 0 0; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+
+    .why-grid { display: grid; grid-template-columns: .68fr 1.32fr; gap: 64px; align-items: start; }
+    .why-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .why-point { padding-top: 18px; border-top: 3px solid var(--yellow); }
+    .why-point p { margin: 0; color: var(--muted); font-size: .9rem; }
+
+    .faq-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 80px; }
+    .faq-list { border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary {
+      min-height: 78px;
+      padding: 23px 46px 23px 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      list-style: none;
+      font-weight: 750;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before, summary::after { content: ""; position: absolute; right: 9px; width: 16px; height: 2px; background: var(--green); transition: transform .2s ease; }
+    summary::after { transform: rotate(90deg); }
+    details[open] summary::after { transform: rotate(0); }
+    details p { max-width: 670px; margin: -6px 46px 26px 0; color: var(--muted); }
+
+    .final-cta { padding: 28px 0 88px; }
+    .cta-box {
+      position: relative;
+      overflow: hidden;
+      padding: 76px;
+      border-radius: 34px 34px 10px 34px;
+      background: var(--green-dark);
+      color: #f6f8ee;
+    }
+    .cta-box::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -110px;
+      width: 300px;
+      height: 300px;
+      border: 72px solid rgba(246,216,74,.13);
+      border-radius: 50%;
+    }
+    .cta-box h2 { max-width: 820px; position: relative; z-index: 1; }
+    .cta-box p { max-width: 580px; position: relative; z-index: 1; color: #c6d8ca; font-size: 1.06rem; }
+    .cta-box .button { position: relative; z-index: 1; margin-top: 12px; }
+    footer { padding: 28px 0 110px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; padding-top: 26px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    .footer-inner strong { color: var(--ink); }
+
+    .mobile-cta { display: none; }
+
+    @media (max-width: 900px) {
+      :root { --page: min(100% - 32px, 720px); }
+      .nav > a:not(.button) { display: none; }
+      .hero { padding-top: 58px; }
+      .hero-grid, .pain-grid, .why-grid, .faq-layout { grid-template-columns: 1fr; }
+      .hero-grid { gap: 56px; }
+      .system-card { width: min(100%, 500px); }
+      .trust-inner { grid-template-columns: 1fr 1fr; }
+      .trust-copy { grid-column: 1 / -1; padding: 18px 0 8px; }
+      .trust-item { border-left: 0; padding: 14px 0 20px; }
+      .trust-item:nth-child(3), .trust-item:nth-child(4) { border-top: 1px solid var(--line); }
+      .service-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 265px; }
+      .service-icon { margin-bottom: 28px; }
+      .steps { grid-template-columns: 1fr; }
+      .step { display: grid; grid-template-columns: 64px 1fr; column-gap: 22px; padding: 28px 0; }
+      .step:not(:last-child) { margin: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+      .step::before { grid-row: 1 / 3; margin: 0; }
+      .step h3 { margin-top: 4px; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .why-points { grid-template-columns: repeat(3, 1fr); }
+      .why-grid, .faq-layout { gap: 46px; }
+    }
+
+    @media (max-width: 600px) {
+      :root { --page: calc(100% - 28px); }
+      body { padding-bottom: 72px; }
+      .section { padding: 76px 0; }
+      .section-tight { padding: 58px 0; }
+      .topbar-inner { min-height: 64px; }
+      .topbar .button { min-height: 42px; padding: 0 16px; font-size: .8rem; box-shadow: 0 4px 0 #bea52f; }
+      .hero { padding: 48px 0 72px; }
+      h1 { font-size: clamp(3rem, 14vw, 4.6rem); }
+      h2 { font-size: clamp(2.2rem, 10vw, 3.2rem); }
+      .hero-actions { align-items: flex-start; flex-direction: column; }
+      .hero-actions .button { width: 100%; }
+      .system-card { padding: 16px; border-radius: 24px 24px 24px 8px; }
+      .system-card::before { inset: 10px -7px -12px 12px; }
+      .trust-inner { grid-template-columns: 1fr; padding-bottom: 10px; }
+      .trust-item { border-top: 1px solid var(--line); }
+      .pain-grid { gap: 26px; }
+      .service-card { padding: 25px; }
+      .step { grid-template-columns: 54px 1fr; column-gap: 18px; }
+      .step::before { width: 50px; height: 50px; }
+      .pricing-grid { gap: 14px; }
+      .price-card { padding: 26px 22px; }
+      .why-points { grid-template-columns: 1fr; gap: 24px; }
+      .faq-layout { gap: 28px; }
+      summary { min-height: 70px; }
+      .cta-box { padding: 48px 24px 54px; border-radius: 26px 26px 8px 26px; }
+      .cta-box .button { width: 100%; }
+      .footer-inner { flex-direction: column; }
+      .mobile-cta {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: max(10px, env(safe-area-inset-bottom));
+        z-index: 30;
+        min-height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px 8px 8px 16px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: color-mix(in srgb, var(--surface), transparent 4%);
+        box-shadow: 0 10px 30px rgba(0,0,0,.18);
+        backdrop-filter: blur(14px);
+        transform: translateY(120%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform .25s ease, opacity .25s ease;
+      }
+      .mobile-cta.visible { transform: translateY(0); opacity: 1; pointer-events: auto; }
+      .mobile-cta span { font-size: .77rem; font-weight: 750; }
+      .mobile-cta .button { min-height: 40px; padding: 0 15px; font-size: .76rem; box-shadow: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="ExtraHands home">
+        <img class="brand-lockup" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgMjQwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+RXh0cmFIYW5kcyBsb2dvPC90aXRsZT4KICA8ZGVzYyBpZD0iZGVzYyI+QSB5ZWxsb3cgc3VuIHdpdGggZ3JlZW4gcmF5cyBiZXNpZGUgdGhlIHdvcmQgRXh0cmFIYW5kcy48L2Rlc2M+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQgMCkgc2NhbGUoLjUpIj4KICAgIDxjaXJjbGUgY3g9IjI0MCIgY3k9IjI0MCIgcj0iODIiIGZpbGw9IiNGRkM0MkUiLz4KICAgIDxnIGZpbGw9IiMzNEEwNUEiPgogICAgICA8cmVjdCB4PSIyMTgiIHk9IjUyIiB3aWR0aD0iNDQiIGhlaWdodD0iODIiIHJ4PSIyMiIvPgogICAgICA8cmVjdCB4PSIyMTgiIHk9IjUyIiB3aWR0aD0iNDQiIGhlaWdodD0iODIiIHJ4PSIyMiIgdHJhbnNmb3JtPSJyb3RhdGUoNDUgMjQwIDI0MCkiLz4KICAgICAgPHJlY3QgeD0iMjE4IiB5PSI1MiIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjgyIiByeD0iMjIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDI0MCAyNDApIi8+CiAgICAgIDxyZWN0IHg9IjIxOCIgeT0iNTIiIHdpZHRoPSI0NCIgaGVpZ2h0PSI4MiIgcng9IjIyIiB0cmFuc2Zvcm09InJvdGF0ZSgxMzUgMjQwIDI0MCkiLz4KICAgICAgPHJlY3QgeD0iMjE4IiB5PSI1MiIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjgyIiByeD0iMjIiIHRyYW5zZm9ybT0icm90YXRlKDE4MCAyNDAgMjQwKSIvPgogICAgICA8cmVjdCB4PSIyMTgiIHk9IjUyIiB3aWR0aD0iNDQiIGhlaWdodD0iODIiIHJ4PSIyMiIgdHJhbnNmb3JtPSJyb3RhdGUoMjI1IDI0MCAyNDApIi8+CiAgICAgIDxyZWN0IHg9IjIxOCIgeT0iNTIiIHdpZHRoPSI0NCIgaGVpZ2h0PSI4MiIgcng9IjIyIiB0cmFuc2Zvcm09InJvdGF0ZSgyNzAgMjQwIDI0MCkiLz4KICAgICAgPHJlY3QgeD0iMjE4IiB5PSI1MiIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjgyIiByeD0iMjIiIHRyYW5zZm9ybT0icm90YXRlKDMxNSAyNDAgMjQwKSIvPgogICAgPC9nPgogIDwvZz4KICA8dGV4dCB4PSIyNzYiIHk9IjE0NyIgZmlsbD0iIzE4NUMzNyIgZm9udC1mYW1pbHk9Ik1hbnJvcGUsIFNlZ29lIFVJLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iODAiIGZvbnQtd2VpZ2h0PSI4MDAiIGxldHRlci1zcGFjaW5nPSItNCI+RXh0cmFIYW5kczwvdGV4dD4KPC9zdmc+Cg==" alt="ExtraHands" width="174" height="51" />
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a class="button" href="#">Book free audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">AI is here. Put it to work.</p>
+          <h1>AI is nothing to be scared of. It is something to <span class="editorial">use.</span></h1>
+          <p class="lead">Artificial intelligence is changing how business gets done, faster than any technology before it. You do not need to understand it, hire for it, or fear it. You just need someone to set it up right. That is what we do.</p>
+          <div class="hero-actions">
+            <a class="button" href="#">
+              Book your free AI audit
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="secondary-link" href="#process">See how it works <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m8 10 4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <p class="trust-line">Built by a software engineer. Your data stays yours.</p>
+        </div>
+
+        <div class="system-card" aria-label="Example of an automated quote to payment workflow">
+          <div class="system-head">
+            <span class="status"><span class="status-dot"></span> Workflow active</span>
+            <span class="system-time">Working quietly</span>
+          </div>
+          <div class="flow">
+            <div class="flow-row">
+              <span class="flow-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h5M8 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="flow-copy"><strong>Quote requested</strong><span>Details collected automatically</span></span>
+              <span class="done">Done</span>
+            </div>
+            <span class="pulse-line" aria-hidden="true"></span>
+            <div class="flow-row">
+              <span class="flow-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16v12H9l-5 4V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+              <span class="flow-copy"><strong>Quote sent</strong><span>Follow-up already scheduled</span></span>
+              <span class="done">Done</span>
+            </div>
+            <span class="pulse-line" aria-hidden="true"></span>
+            <div class="flow-row">
+              <span class="flow-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h12v16H6zM9 8h6M9 12h6M9 16h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="flow-copy"><strong>Invoice tracked</strong><span>Reminder goes out on time</span></span>
+              <span class="done">Done</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problems">
+      <div class="wrap pain-grid">
+        <div>
+          <p class="eyebrow">A practical way forward</p>
+          <h2>AI, without the <span class="editorial">fear</span></h2>
+        </div>
+        <div class="pain-list">
+          <article class="pain-item">
+            <span class="pain-number">01</span>
+            <div><p>AI is growing faster than any technology in history, and big companies already use it to cut costs and move faster.</p></div>
+          </article>
+          <article class="pain-item">
+            <span class="pain-number">02</span>
+            <div><p>Small businesses do not need a data science team. They need practical systems that handle repetitive work quietly in the background.</p></div>
+          </article>
+          <article class="pain-item">
+            <span class="pain-number">03</span>
+            <div><p>We translate AI into plain outcomes: hours back, faster responses, fewer dropped balls.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="wrap">
+        <p class="eyebrow">What we automate</p>
+        <h2>Workflow automation that <span class="editorial" style="color:#f6d84a">pays for itself</span></h2>
+        <p class="section-intro">Start with the repetitive work that slows your team down, then let a well-built system keep it moving.</p>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h5M8 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Quote to cash</h3>
+            <p>Quotes generated and sent, automatic follow-ups, invoicing, and payment reminders.</p>
+            <div class="service-result">From request to paid, without the paperwork.</div>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3v3M17 3v3M4 8h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 14 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Scheduling that runs itself</h3>
+            <p>Online booking, confirmations, reminders, and rescheduling without the phone tag.</p>
+            <div class="service-result">A calendar that manages itself.</div>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16v12H9l-5 4V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m8 11 2.2 2L16 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Follow-up and reviews</h3>
+            <p>Post-job check-ins, review requests, and win-back messages to past customers on autopilot.</p>
+            <div class="service-result">Every job turns into the next one.</div>
+          </article>
+        </div>
+        <p class="service-aside">We also build AI receptionists and instant lead response. Most agencies sell those. Our edge is deeper: the workflows behind the front door.</p>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2>One useful system at a time.</h2>
+        <p class="section-intro">We find the best place to begin, prove the value quickly, and keep the system working.</p>
+        <div class="steps">
+          <article class="step"><div><h3>Free AI opportunity audit</h3><p>We find where you are losing time and money.</p></div></article>
+          <article class="step"><div><h3>Pilot build in days</h3><p>One automation goes live fast, so you see results before you commit.</p></div></article>
+          <article class="step"><div><h3>Monthly care</h3><p>We monitor, tune, and report hours saved.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" id="pricing">
+      <div class="wrap">
+        <div class="pricing-head">
+          <p class="eyebrow">Simple pricing</p>
+          <h2>Start with one clear win.</h2>
+          <p class="section-intro">Every engagement has a clear scope, a practical outcome, and a path forward.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="price-name">AI Opportunity Audit</div>
+            <div class="price"><strong>$999</strong><small>credited toward your build</small></div>
+            <p class="price-desc">Credited toward your build if you move forward within 30 days.</p>
+          </article>
+          <article class="price-card featured">
+            <div class="price-name">Automation pilot</div>
+            <div class="price"><strong>From $1,000</strong><small>one-time setup</small></div>
+            <p class="price-desc">Most pilots land between $1,000 and $2,500.</p>
+          </article>
+          <article class="price-card">
+            <div class="price-name">Care plan</div>
+            <div class="price"><strong>From $49</strong><small>per month</small></div>
+            <p class="price-desc">Monitoring, tuning, and new automations. 3-month minimum.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="wrap why-grid">
+        <div>
+          <p class="eyebrow">Why XtraHands</p>
+          <h2>Built for the business, not the buzzword.</h2>
+        </div>
+        <div class="why-points">
+          <article class="why-point"><h3>Engineer-built</h3><p>Built by a real software engineer, not a reseller.</p></article>
+          <article class="why-point"><h3>Ready for compliance</h3><p>Enterprise-grade AI with a Microsoft Azure path for businesses with compliance needs.</p></article>
+          <article class="why-point"><h3>Privacy first</h3><p>Your customer data stays yours. We never sell or share it.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" id="faq">
+      <div class="wrap faq-layout">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Straight answers.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Will AI replace my staff?</summary>
+            <p>No. It takes the repetitive work off their plate so your people can do the work that actually needs a human.</p>
+          </details>
+          <details>
+            <summary>I do not understand AI. Is this for me?</summary>
+            <p>You are exactly who it is for. You never touch the technology, you just get the outcome.</p>
+          </details>
+          <details>
+            <summary>How is this different from the AI tools I already see advertised?</summary>
+            <p>Tools need setup, wiring, and tuning to your business. We do all of that for you.</p>
+          </details>
+          <details>
+            <summary>How long does setup take?</summary>
+            <p>Most pilots go live in days, not months.</p>
+          </details>
+          <details>
+            <summary>What does it cost month to month?</summary>
+            <p>Care plans start at $49/month, and usage costs are passed through at cost.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="book">
+      <div class="wrap">
+        <div class="cta-box">
+          <p class="eyebrow" style="color:#f6d84a">Your next move</p>
+          <h2>AI is growing with or without you. Put it to work.</h2>
+          <a class="button" href="#">
+            Book your free AI audit
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span><strong>XtraHands AI</strong> · An extra pair of hands for your business.</span>
+      <span><a href="mailto:hello@extrahandsai.com">hello@extrahandsai.com</a> · Copyright 2026.</span>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" id="mobileCta" aria-hidden="true">
+    <span>Put AI to work.</span>
+    <a class="button" href="#">Book free audit</a>
+  </div>
+
+  <script>
+    (function () {
+      var cta = document.getElementById('mobileCta');
+      var hero = document.querySelector('.hero');
+      var book = document.getElementById('book');
+      if (!cta || !hero || !book || !('IntersectionObserver' in window)) return;
+
+      var heroVisible = true;
+      var bookVisible = false;
+      function update() {
+        var show = !heroVisible && !bookVisible;
+        cta.classList.toggle('visible', show);
+        cta.setAttribute('aria-hidden', show ? 'false' : 'true');
+      }
+      new IntersectionObserver(function (entries) {
+        heroVisible = entries[0].isIntersecting;
+        update();
+      }, { threshold: 0.08 }).observe(hero);
+      new IntersectionObserver(function (entries) {
+        bookVisible = entries[0].isIntersecting;
+        update();
+      }, { threshold: 0.08 }).observe(book);
+    }());
+  </script>
+</body>
+</html>
